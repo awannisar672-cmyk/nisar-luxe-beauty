@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+
+<meta charset="UTF-8">
+<title>NISAR LUXE BEAUTY</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d4af37">
+
+</head>
+
+<body>
+
+<header>
+<div class="lux-header">
+  <h1>NISAR LUXE BEAUTY</h1>
+
+</div>
+
+
+
+
+
+<div class="slider">
+ 
+
+<div class="slide"><img src="images/ab1.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab2.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab3.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab4.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab5.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab6.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab7.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab8.png" loading="lazy"></div>
+<div class="slide"><img src="images/ab9.png" loading="lazy"></div>
+
+
+
+
+</div>
+
+
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search luxury product...">
+  <button id="searchBtn">Search</button>
+
+</div>
+<div class="social-icons">
+
+  <a href="https://www.instagram.com/nisarali3750?igsh=ZnhhdnA2dmZkMHdv" target="_blank">
+    <img src="images/insta.png">
+  </a>
+
+  <a href="https://www.tiktok.com/@nisar_ali_33?_r=1&_t=ZS-93RcJ2YUE0P" target="_blank">
+    <img src="images/tiktok.png">
+  </a>
+
+  <a href="https://www.facebook.com/share/185mNWW4Vn/" target="_blank">
+    <img src="images/facebook.png">
+  </a>
+
+  <!-- WhatsApp (same number jo pehle use ho raha hai) -->
+  <a href="https://wa.me/03368644181" target="_blank">
+    <img src="images/whatsapp.png">
+  </a>
+
+
+</div>
+<div class="cat-wrapper">
+
+<button class="cat-main" onclick="toggleCats()">☰ Categories</button>
+
+<div id="catMenu" class="cat-menu">
+
+<button onclick="filterCat('all')">All</button>
+<button onclick="filterCat('face')">Face Wash</button>
+<button onclick="filterCat('body')">Body Wash</button>
+<button onclick="filterCat('perfume')">Perfumes</button>
+<button onclick="filterCat('soap')">Soap</button>
+<button onclick="filterCat('shampoo')">Shampoo</button>
+<button onclick="filterCat('conditioner')">conditioner</button>
+<button onclick="filterCat('brush')">Hair Brush</button>
+<button onclick="filterCat('dryer')">Hair Dryer</button>
+<button onclick="filterCat('lipstick')">Lipstick</button>
+<button onclick="filterCat('nail')">Nail Polish</button>
+<button onclick="filterCat('cream')">Cream</button>
+<button onclick="filterCat('lotion')">Lotion</button>
+<button onclick="filterCat('makeup')">Makeup</button>
+<button onclick="filterCat('serum')">Serum</button>
+<button onclick="filterCat('wax')">Wax</button>
+<button onclick="filterCat('lens')">Eye Lens</button>
+<button onclick="filterCat('spray')">Body Spray</button>
+<button onclick="filterCat('mist')">Body Mist</button>
+<button onclick="filterCat('nails')">Artificial Nail</button>
+<button onclick="filterCat('foundation')">Foundation</button>
+
+</div>
+</div>
+
+<div class="luxury-text">HIGH QUALITY IMPORTED PRODUCT</div>
+<div class="luxury-text">
+  BECAUSE YOU  DESERVE TO FEEL BEAUTIFUL IN YOUR OWN WAY
+</div>
+
+
+</header>
+
+<div id="shop" class="products"></div>
+<div class="bottom-whatsapp">
+  <a id="luxWhats" href="https://wa.me/923368644181" target="_blank">
+    ORDER ON WHATSAPP
+  </a>
+</div>
+
+<footer>© THANKS  FOR  VISIT  NISAR LUXE BEAUTY</footer>
+
+<script src="script.js"></script>
+<script>
+if("serviceWorker" in navigator){
+ navigator.serviceWorker.register("./sw.js");
+}
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("swjs");
+}
+</script>
+
+
+
+</body>
+</html>
+
+
